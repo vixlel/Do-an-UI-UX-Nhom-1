@@ -103,7 +103,7 @@
     margin: 0 auto 1rem;
     line-height: 30px;
   }
-  
+  /* đây là phần cho reward */
   .rewards {
     background-color: #d4e9e2;
     padding: 3rem 2rem;
@@ -170,7 +170,7 @@
     margin-bottom: 1rem;
   }
   
-
+/* đây là css cho tìm cửa hàng */
 
   .find-store {
     display: flex;
@@ -241,7 +241,7 @@
     object-fit: cover;
   }
   
-
+/* css của đăng ký */
 
   .signup-container {
     text-align: center;
@@ -314,7 +314,7 @@
     width: 40px;
   }
 
-  
+  /* css của đăng nhập */
 
   .form-container {
     text-align: center;
@@ -374,3 +374,32 @@
     width: 50px;
   }
   
+  /* css quên mật khẩu */
+  .otp-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-top: 0.5rem;
+    justify-content: center;
+  }
+  
+  .otp-input {
+    width: 43px !important;
+    height: 43px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid #ccc !important;
+    border-radius: 18px !important;
+  }
+  .send-otp {
+    padding: 10px 30px;
+    background-color: #00754a;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .send-otp:hover {
+    background-color: #005f3d;
+  }
