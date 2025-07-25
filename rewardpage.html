@@ -21,8 +21,8 @@
       </nav>
     </div>
     <div class="header-right">
-      <a href="#">Find a store</a>
-      <button class="btn dark">Sign-In/Up</button>
+      <a href="./findstore.html">Find a store</a>
+      <button class="btn dark" id="btn-signin">Sign-In/Up</button>
     </div>
   </header>
 
@@ -120,4 +120,9 @@
     <p>© 2025 Starbucks Coffee Company. All rights reserved.</p>
   </footer>
 </body>
+<script>
+  document.getElementById("btn-signin").addEventListener("click", function () {
+    window.location.href = "signin.html";
+  });
+</script> 
 </html>

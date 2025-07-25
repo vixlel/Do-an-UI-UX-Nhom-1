@@ -22,15 +22,15 @@
       </nav>
     </div>
     <div class="header-right">
-      <a href="#">Find a store</a>
-      <button class="btn dark">Sign-In/Up</button>
+      <a href="./findstore.html">Find a store</a>
+      <button class="btn dark" id="btn-signin">Sign-In/Up</button>
     </div>
   </header>
 
   <!-- Sign-In Section -->
   <main class="form-container">
     <img src="img/logo-starbuck.png" alt="Starbucks logo" class="form-logo" />
-    <h2 class="form-title">Sign-In</h2>
+    <h2 class="form-title">Forgot Password</h2>
     
     <form>
       <div class="form-group">
@@ -50,8 +50,6 @@
           <button type="button" class="btn send-otp">Gửi</button>
         </div>
       </div>      
-
-      <a href="#" class="forgot-password">Forgot Password</a>
 
       <button type="submit" class="btn blue">Nhận password</button>
     </form>
@@ -83,6 +81,9 @@
           inputs[index + 1].focus();
         }
       });
+    });
+    document.getElementById("btn-signin").addEventListener("click", function () {
+      window.location.href = "signin.html";
     });
   </script>
   

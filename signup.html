@@ -22,7 +22,7 @@
     </div>
     <div class="header-right">
       <a href="./findstore.html">Find a store</a>
-      <button class="btn dark"><a href="./sign-in.html"></a>Sign-In</button>
+      <button class="btn dark" id="btn-signin"></a>Sign-In</button>
     </div>
   </header>
 
@@ -132,7 +132,10 @@
         alert("Đăng ký thành công!");
         // Gửi dữ liệu tại đây (fetch / axios ...)
       }
-    });
+      });
+      document.getElementById("btn-signin").addEventListener("click", function () {
+        window.location.href ="signin.html"; 
+      });
     </script>
     
 </html>

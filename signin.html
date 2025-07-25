@@ -22,8 +22,8 @@
       </nav>
     </div>
     <div class="header-right">
-      <a href="#">Find a store</a>
-      <button type="button" class="btn dark signup-btn"><a href="./sign-up.html"></a>Sign-Up</button>
+      <a href="./findstore.html">Find a store</a>
+      <button id="btn-signup" class="btn dark">Sign-Up</button>
     </div>
   </header>
 
@@ -43,7 +43,7 @@
         <input type="password" id="password" placeholder="Nhập password" />
       </div>
 
-      <a href="#" class="forgot-password">Forgot Password</a>
+      <a href="./forgot.html" class="forgot-password">Forgot Password</a>
 
       <button type="submit" class="btn blue">Đăng Nhập</button>
     </form>
@@ -67,4 +67,35 @@
   </footer>
 
 </body>
+<script>
+  document.getElementById("btn-signup").addEventListener("click", function () {
+    window.location.href = "signup.html";
+  });
+  document.querySelector("form").addEventListener("submit", function (e) {
+    const email = document.getElementById("email");
+    const password = document.getElementById("password");
+    let valid = true;
+
+    // Xóa các cảnh báo cũ
+    email.style.border = "";
+    password.style.border = "";
+
+    // Kiểm tra email/sdt
+    if (email.value.trim() === "") {
+      email.style.border = "2px solid red";
+      valid = false;
+    }
+
+    // Kiểm tra password
+    if (password.value.trim() === "") {
+      password.style.border = "2px solid red";
+      valid = false;
+    }
+
+    if (!valid) {
+      e.preventDefault();
+      alert("Vui lòng điền đầy đủ mail và password");
+    }
+    });
+</script>
 </html>
