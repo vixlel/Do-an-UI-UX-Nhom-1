@@ -21,8 +21,8 @@
       </nav>
     </div>
     <div class="header-right">
-      <a href="#">Find a store</a>
-      <button class="btn dark">Sign-In/Up</button>
+      <a href="./findstore.html">Find a store</a>
+      <button class="btn dark"><a href="./sign-in.html"></a>Sign-In</button>
     </div>
   </header>
 
@@ -84,4 +84,55 @@
     </form>
   </section>
 </body>
+<script>
+    document.querySelector(".signup-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+    
+      const inputs = document.querySelectorAll(".signup-form input");
+      const [name, email, password, repass, phone, dob] = inputs;
+    
+      // Clear error styles
+      inputs.forEach(input => input.style.border = "");
+    
+      let isValid = true;
+    
+      // Kiểm tra không được để trống
+      [name, email, password, repass, phone, dob].forEach(input => {
+        if (input.value.trim() === "") {
+          input.style.border = "1px solid red";
+          isValid = false;
+        }
+      });
+    
+      // Kiểm tra trùng mật khẩu
+      if (password.value !== repass.value) {
+        repass.style.border = "1px solid red";
+        isValid = false;
+        alert("Mật khẩu không trùng khớp.");
+      }
+    
+      // Kiểm tra tuổi ≥ 16
+      if (dob.value) {
+        const birthDate = new Date(dob.value);
+        const today = new Date();
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+          age--;
+        }
+    
+        if (age < 16) {
+          dob.style.border = "1px solid red";
+          isValid = false;
+          alert("Bạn phải từ 16 tuổi trở lên để đăng ký.");
+        }
+      }
+    
+      if (isValid) {
+        alert("Đăng ký thành công!");
+        // Gửi dữ liệu tại đây (fetch / axios ...)
+      }
+    });
+    </script>
+    
 </html>
