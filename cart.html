@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng - Starbucks</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="left">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png" alt="Starbucks Logo">
+            <a href="index.html">Menu</a>
+            <a href="#">Rewards</a>
+            <a href="#">Gift Cards</a>
+        </div>
+        <div class="right">
+            <a href="gio_hang.html">Giỏ hàng</a>
+            <a href="#">Đăng ký</a>
+        </div>
+    </div>
+
+    <div class="cart-section">
+        <h2>Giỏ Hàng</h2>
+        <div class="cart-item" id="item1">
+            <span>Cold Brew - Grande (5 cal)</span>
+            <span>Giá: $5.00</span>
+            <button class="remove-button" onclick="removeItem('item1')">Xóa</button>
+        </div>
+        <div class="cart-item" id="item2">
+            <span>Iced Latte - Tall (90 cal)</span>
+            <span>Giá: $4.50</span>
+            <button class="remove-button" onclick="removeItem('item2')">Xóa</button>
+        </div>
+        <div class="cart-total">
+            <span>Tổng cộng: $<span id="total">9.50</span></span>
+            <button class="checkout-button" onclick="alert('Thanh toán thành công!')">Thanh toán</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>About Us</h4>
+                <a href="#">Our Company</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-social">
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/spotify.png" alt="Spotify"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="YouTube"></a>
+            <a href="#"><img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter"></a>
+        </div>
+        <p>For item availability, choose a store</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
