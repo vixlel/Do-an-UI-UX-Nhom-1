@@ -170,3 +170,74 @@
     margin-bottom: 1rem;
   }
   
+
+
+  .find-store {
+    display: flex;
+    height: 90vh;
+  }
+  
+  .store-left {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  .store-options {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    border: #00754a solid 2px;
+    width: 500px;
+    border-radius: 50px
+  }
+  
+  .btn.outline {
+    background: white;
+    color: #00754a;
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+  
+  .store-search {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .store-search input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-style: italic;
+  }
+  
+  .store-message h4 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .store-footer-links {
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .store-footer-links a {
+    font-size: 14px;
+    color: #00754a;
+  }
+  
+  .store-map {
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .store-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
