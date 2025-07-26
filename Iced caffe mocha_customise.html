@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chi tiết sản phẩm</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+  <header>
+  <div class="navbar">
+    <div class="navbar-left">
+      <a href="trangchu.html">
+      <img src="img/logo-starbucks.jpg" alt="Starbucks" class="logo"></a>
+      <ul class="nav-links">
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="#">STARBUCK REWARDS</a></li>
+        <li><a href="About us.html">ABOUT US</a></li>
+        <li><a href="#">BLOG/NEWS</a></li>
+      </ul>
+    </div>
+    <div class="navbar-right">
+      <a href="#">Find a store</a>
+      <button class="btn-signin">Sign up</button>
+    </div>
+  </div>
+</header>
+
+<div class="product-image">
+  <img src="img/IcedCaffeMocha.png" alt="IcedCaffeMocha">
+  <div class="product-text">
+    <h1>Iced Caffe Mocha</h1>
+    <p class="size">350 calories</p>
+  </div>
+</div>
+    
+<div class="customize-section">
+        <div class="done-button">
+            <button class="order-button" onclick="alert('Done Customizing')">← Done Customizing</button>
+        </div>
+
+        <div class="customize-grid">
+            <div class="customize-column">
+                <div class="category">
+                    <h3>Flavors</h3>
+                    <select id="syrups">
+                        <option value="Add Syrups">Add Syrups</option>
+                        <option value="vanilla">Vanilla Syrup</option>
+                        <option value="caramel">Caramel Syrup</option>
+                    </select>
+                    <select id="sauces">
+                        <option value="Add Sauce">Add Sauce</option>
+                        <option value="mocha">Mocha Sauce</option>
+                        <option value="whiteChocolate">White Chocolate Sauce</option>
+                    </select>
+                </div>
+                <div class="category">
+                    <h3>Sweeteners</h3>
+                    <select id="liquidSweeteners">
+                        <option value="none">Add Liquid Sweeteners</option>
+                        <option value="honey">Honey Blend</option>
+                        <option value="classic">Classic Syrup</option>
+                    </select>
+                    <select id="sweetenerPackets">
+                        <option value="none">Add Sweetener Packets</option>
+                        <option value="stevia">Stevia</option>
+                        <option value="splenda">Splenda</option>
+                    </select>
+                </div>
+            </div>
+            <div class="customize-column">
+                <div class="category">
+                    <h3>Cold Foams</h3>
+                    <select id="ColdFoams">
+                        <option value="Add Cold Foam">Add Cold Foam</option>
+                        <option value="regular">Regular</option>
+                        <option value="vanilla">Vanilla Sweet Cream</option>
+                    </select>
+                    <select id="nonDairyColdFoams">
+                        <option value="Add Cold Foam">Add Nondairy Cold Foam</option>
+                        <option value="regular">Brown sugar cream cold foam</option>
+                        <option value="vanilla">Chocolate cream cold foam</option>
+                    </select>
+                </div>
+                <div class="category">
+                    <h3>Cup Options</h3>
+                    <select id="cupSizes">
+                        <option value="AddCupSizes">Add Cup Sizes</option>
+                        <option value="short">Short</option>
+                        <option value="tall">Tall</option>
+                        <option value="grande">Grande</option>
+                    </select>
+                    <select id="personalCup">
+                        <option value="none">None</option>
+                        <option value="personal">Personal Cup</option>
+                    </select>
+                </div>
+            </div>
+            <div class="customize-column">
+                <div class="category">
+                    <h3>Espresso & Shot Options</h3>
+                    <select id="espressoRoast">
+                        <option value="none">Add Espresso Roast options</option>
+                        <option value="blonde">Blonde</option>
+                        <option value="dark">Dark Roast</option>
+                    </select>
+                    <select id="addShots">
+                        <option value="none">None</option>
+                        <option value="addShots">Add Shots +</option>
+                    </select>
+                </div>
+                <div class="category">
+                    <h3>Blended Options</h3>
+                    <select id="blendedOptions">
+                        <option value="none">None</option>
+                        <option value="raspberry">Add Raspberry Flavored Pearls +</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button class="order-button" onclick="alert('Added to Order')">Add to Order</button>
+        </div>
+    </div>
+<footer>
+  <!-- Khung trên -->
+  <div class="footer-top">
+    <p>Giới thiệu về chúng tôi</p>
+    <ul>
+      <a href="About us.html">    
+      <li>Công ty chúng tôi</li></a> 
+      <a href="Menu.html">   
+      <li>Cà phê chúng tôi</li></a> 
+      <li>Dịch vụ khách hàng</li>
+    </ul>
+  </div>
+
+  <!-- Khung dưới -->
+  <!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Social Icons Test</title>
+</head>
+<body>
+  <div class="footer-social-links">
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/Starbucks/" target="_blank" aria-label="Facebook">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000" viewBox="0 0 24 24">
+        <path d="M22 12.1C22 6.6 17.5 2 12 2S2 6.6 2 12.1c0 5 3.7 9.1 8.5 9.9v-7H8v-2.9h2.5V9.9c0-2.5 1.5-3.9 3.7-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.5.8-1.5 1.5v1.8H18l-.4 2.9h-2.6v7C18.3 21.2 22 17.1 22 12.1z"/>
+      </svg>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/starbucks" target="_blank" aria-label="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000" viewBox="0 0 24 24">
+        <path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 2 .3 2.4.5.6.2 1 .5 1.5 1s.7.9 1 1.5c.2.4.4 1.2.5 2.4.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.3 2-.5 2.4-.2.6-.5 1-1 1.5s-.9.7-1.5 1c-.4.2-1.2.4-2.4.5-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-2-.3-2.4-.5-.6-.2-1-.5-1.5-1s-.7-.9-1-1.5c-.2-.4-.4-1.2-.5-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.3-2 .5-2.4.2-.6.5-1 1-1.5s.9-.7 1.5-1c.4-.2 1.2-.4 2.4-.5C8.4 2.2 8.8 2.2 12 2.2zM12 5.2a6.8 6.8 0 1 0 0 13.6 6.8 6.8 0 0 0 0-13.6zm0 11.3a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9zm5.2-11.4a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/>
+
+      </svg>
+    </a>
+
+    <!-- Twitter -->
+    <a href="https://x.com/starbucks/" target="_blank" aria-label="Twitter">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000" viewBox="0 0 24 24">
+        <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 0 0 1.88-2.37 8.6 8.6 0 0 1-2.7 1.04 4.3 4.3 0 0 0-7.4 3.92A12.2 12.2 0 0 1 3.1 4.6a4.3 4.3 0 0 0 1.33 5.75 4.3 4.3 0 0 1-1.95-.54v.05a4.3 4.3 0 0 0 3.45 4.2 4.3 4.3 0 0 1-1.94.07 4.3 4.3 0 0 0 4.02 2.99A8.7 8.7 0 0 1 2 19.5a12.3 12.3 0 0 0 6.6 1.93c7.9 0 12.2-6.6 12.2-12.3v-.56c.84-.6 1.57-1.35 2.16-2.2z"/>
+      </svg>
+    </a>
+  </div>
+  <!-- Phần chữ dưới icon -->
+  <div class="footer-social-text">
+    <span>Thông báo về quyền riêng tư</span>
+    <span>| Điều khoản sử dụng</span>
+    <span>| Đối tác</span>
+    <span>| Tùy chọn cookie</span>
+  
+    <p>&copy; Starbucks Corporation, 2025. Bảo lưu mọi quyền.</p>
+</div>
+</body>
+</html>
