@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starbucks Rewards</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png" alt="Starbucks logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">DETAIL</a></li>
+          <li><a href="#">ORDER</a></li>
+          <li><a href="#">Rewar</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a href="./findstore.html">Find a store</a>
+      <button class="btn dark" id="btn-signin">Sign-In/Up</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>It’s a great day for free coffee</h1>
+      <p>Sign up and start enjoying the perks of Starbucks® Rewards.</p>
+      <button class="btn green">Join now</button>
+      <p class="app-link">It’s even better <a href="#">with the app</a>.</p>
+    </div>
+    <div class="hero-image">
+    </div>
+  </section>
+
+  <!-- Steps Section -->
+  <section class="steps">
+    <h2>Getting started is easy</h2>
+    <p>Earn Stars and get rewarded in a few easy steps.</p>
+    <div class="step-cards">
+      <div class="step-card">
+        <div class="circle">1</div>
+        <h3>Create an account</h3>
+        <p>To get started, join now. You can also <a href="#">join in the app</a> to get access to the full range of Starbucks® Rewards benefits.</p>
+      </div>
+      <div class="step-card">
+        <div class="circle">2</div>
+        <h3>Order and pay how you’d like</h3>
+        <p>Use cash, credit/debit card or save some time and pay right through the app. You’ll collect Stars all ways. <a href="#">Learn how</a>.</p>
+      </div>
+      <div class="step-card">
+        <div class="circle">3</div>
+        <h3>Earn Stars, get Rewards</h3>
+        <p>As you earn Stars, you can redeem them for Rewards—like free food, drinks, and more. Start redeeming with as little as 25 Stars!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rewards Section -->
+  <section class="rewards">
+    <h2>Get your favorites for free</h2>
+    <div class="stars-list">
+      <span>25★</span>
+      <span>100★</span>
+      <span class="active">200★</span>
+      <span>300★</span>
+      <span>400★</span>
+    </div>
+    <div class="reward-detail">
+      <img src="https://www.starbucks.com/weblx/images/rewards/reward-tiers/200.png" alt="Drink" />
+      <div class="reward-text">
+        <h3>Handcrafted drink (Cold Brew, lattes and more) or hot breakfast</h3>
+        <p>Turn good mornings great with a delicious handcrafted drink of your choice, breakfast sandwich or oatmeal on us.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extras Section -->
+  <section class="extras">
+    <h2>Endless Extras</h2>
+    <p>Joining Starbucks® Rewards means unlocking access to benefits like quick and easy ordering, tasty Rewards and—yes, free coffee.</p>
+    <div class="extra-cards">
+      <div class="extra-card">
+        <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/1-fun-freebies.svg" alt="" />
+        <h3>Fun freebies</h3>
+        <p>Not only can you earn free food, drinks and more, look forward to a birthday treat on us.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="extra-card">
+        <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/2-order-ahead.svg" alt="" />
+        <h3>Order & pay ahead</h3>
+        <p>Master the art of ordering ahead with saved favorites and payment methods.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div class="extra-card">
+        <img src="https://www.starbucks.com/weblx/images/rewards/ways-to-pay/3-get-to-free-faster.svg" alt="" />
+        <h3>Get to free faster</h3>
+        <p>Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.</p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">Privacy Notice</a>
+      <a href="#">Consumer Health Privacy Notice</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Do Not Share My Personal Information</a>
+      <a href="#">CA Supply Chain Act</a>
+      <a href="#">Accessibility</a>
+      <a href="#">Cookie Preferences</a>
+    </div>
+    <p>© 2025 Starbucks Coffee Company. All rights reserved.</p>
+  </footer>
+</body>
+<script>
+  document.getElementById("btn-signin").addEventListener("click", function () {
+    window.location.href = "signin.html";
+  });
+</script> 
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign-In | Starbucks</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png" alt="Starbucks logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">DETAIL</a></li>
+          <li><a href="#">ORDER</a></li>
+          <li><a href="#">REWARD</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a href="./findstore.html">Find a store</a>
+      <button id="btn-signup" class="btn dark">Sign-Up</button>
+    </div>
+  </header>
+
+  <!-- Sign-In Section -->
+  <main class="form-container">
+    <img src="img/logo-starbuck.png" alt="Starbucks logo" class="form-logo" />
+    <h2 class="form-title">Sign-In</h2>
+    
+    <form>
+      <div class="form-group">
+        <label for="email">Mail or Phone</label>
+        <input type="text" id="email" placeholder="Nhập Mail hoặc số điện thoại" />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Nhập password" />
+      </div>
+
+      <a href="./forgot.html" class="forgot-password">Forgot Password</a>
+
+      <button type="submit" class="btn blue">Đăng Nhập</button>
+    </form>
+
+    <p class="with-text">With</p>
+    <div class="social-icons">
+      <img src="img/logo-google.png" alt="Google" />
+      <img src="img/logo-facebook.png" alt="Facebook" />
+      <img src="img/logo-apple.png" alt="Apple" />
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">Privacy Notice</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Do Not Share My Personal Information</a>
+    </div>
+    <p>© 2025 Starbucks Coffee Company. All rights reserved.</p>
+  </footer>
+
+</body>
+<script>
+  document.getElementById("btn-signup").addEventListener("click", function () {
+    window.location.href = "signup.html";
+  });
+  document.querySelector("form").addEventListener("submit", function (e) {
+    const email = document.getElementById("email");
+    const password = document.getElementById("password");
+    let valid = true;
+
+    // Xóa các cảnh báo cũ
+    email.style.border = "";
+    password.style.border = "";
+
+    // Kiểm tra email/sdt
+    if (email.value.trim() === "") {
+      email.style.border = "2px solid red";
+      valid = false;
+    }
+
+    // Kiểm tra password
+    if (password.value.trim() === "") {
+      password.style.border = "2px solid red";
+      valid = false;
+    }
+
+    if (!valid) {
+      e.preventDefault();
+      alert("Vui lòng điền đầy đủ mail và password");
+    }
+    });
+</script>
+</html>

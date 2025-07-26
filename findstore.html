@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Find a Store</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- Header giữ nguyên -->
+  <header class="header">
+    <div class="header-left">
+      <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png" alt="Starbucks logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">DETAIL</a></li>
+          <li><a href="#">ORDER</a></li>
+          <li><a href="#">Rewar</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a href="./findstore.html">Find a store</a>
+      <button class="btn dark" id="btn-signin"></a>Sign-In/Up</button>
+    </div>
+  </header>
+
+  <!-- Find Store Section -->
+  <section class="find-store">
+    <div class="store-left">
+      <div class="store-options">
+        <button class="btn green active" style="width: 50%;">Pick up</button>
+        <button class="btn outline" style="width: 50%; border-radius: 50px;">Delivery</button>
+      </div>
+      <div class="store-search">
+        <input type="text" placeholder="Find a store" />
+        <button class="btn outline" style="border: 1.5px solid #00754a ;">Filter</button>
+      </div>
+      <div class="store-message">
+        <h4>Zoomed out too far</h4>
+        <p>Try searching for a location or zooming in to see results.</p>
+      </div>
+      <div class="store-footer-links">
+        <a href="#">Privacy Notice</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Do Not Share My Personal Information</a>
+      </div>
+    </div>
+    <div class="store-map">
+      <img src="./img/map.png" alt="Map placeholder" />
+    </div>
+  </section>
+</body>
+<script>
+    document.getElementById("btn-signin").addEventListener("click", function () {
+      window.location.href = "signin.html";
+    });
+  </script>  
+</html>

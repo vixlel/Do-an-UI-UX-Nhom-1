@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign-Up</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header giữ nguyên -->
+  <header class="header">
+    <div class="header-left">
+      <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png" alt="Starbucks logo" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">DETAIL</a></li>
+          <li><a href="#">ORDER</a></li>
+          <li><a href="#">Rewar</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      <a href="./findstore.html">Find a store</a>
+      <button class="btn dark" id="btn-signin"></a>Sign-In</button>
+    </div>
+  </header>
+
+  <!-- Đăng ký -->
+  <section class="signup-container">
+    <img src="./img/logo-starbuck.png" alt="Logo" class="signup-logo"/>
+    <h1 class="signup-title">Sign-Up</h1>
+
+    <form class="signup-form">
+      <div class="form-group">
+        <label>Full name <span class="required">*</span></label>
+        <input type="text" placeholder="Nhập họ & tên"/>
+      </div>
+
+      <div class="form-group">
+        <label>Mail <span class="required">*</span></label>
+        <input type="email" placeholder="Nhập mail"/>
+      </div>
+
+      <div class="form-group">
+        <label>Password <span class="required">*</span></label>
+        <input type="password" placeholder="Nhập password"/>
+      </div>
+
+      <div class="form-group">
+        <label>Re-enter Password <span class="required">*</span></label>
+        <input type="password" placeholder="Nhập lại password"/>
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number <span class="required">*</span></label>
+        <input type="tel" placeholder="Nhập số điện thoại"/>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Birth Date <span class="required">*</span></label>
+          <input type="date" />
+        </div>
+        <div class="form-group">
+          <label>Sex</label>
+          <input type="text" placeholder="Nhập giới tính"/>
+        </div>
+      </div>
+
+      <div class="form-terms">
+        <input type="checkbox" />
+        <label>Đồng ý điều khoản sử dụng<br/><a href="#">Xem điều khoản</a></label>
+      </div>
+
+      <button type="submit" class="btn signup-btn">Đăng Kí</button>
+
+      <p class="with-text">With</p>
+      <div class="signup-icons">
+        <img src="./img/logo-google.png" alt="Google">
+        <img src="./img/logo-facebook.png" alt="Facebook">
+        <img src="./img/logo-apple.png" alt="Apple">
+      </div>
+    </form>
+  </section>
+</body>
+<script>
+    document.querySelector(".signup-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+    
+      const inputs = document.querySelectorAll(".signup-form input");
+      const [name, email, password, repass, phone, dob] = inputs;
+    
+      // Clear error styles
+      inputs.forEach(input => input.style.border = "");
+    
+      let isValid = true;
+    
+      // Kiểm tra không được để trống
+      [name, email, password, repass, phone, dob].forEach(input => {
+        if (input.value.trim() === "") {
+          input.style.border = "1px solid red";
+          isValid = false;
+        }
+      });
+    
+      // Kiểm tra trùng mật khẩu
+      if (password.value !== repass.value) {
+        repass.style.border = "1px solid red";
+        isValid = false;
+        alert("Mật khẩu không trùng khớp.");
+      }
+    
+      // Kiểm tra tuổi ≥ 16
+      if (dob.value) {
+        const birthDate = new Date(dob.value);
+        const today = new Date();
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+          age--;
+        }
+    
+        if (age < 16) {
+          dob.style.border = "1px solid red";
+          isValid = false;
+          alert("Bạn phải từ 16 tuổi trở lên để đăng ký.");
+        }
+      }
+    
+      if (isValid) {
+        alert("Đăng ký thành công!");
+        // Gửi dữ liệu tại đây (fetch / axios ...)
+      }
+      });
+      document.getElementById("btn-signin").addEventListener("click", function () {
+        window.location.href ="signin.html"; 
+      });
+    </script>
+    
+</html>

@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #1e3932;
+    background-color: #fff;
+    line-height: 1.6;
+  }
+  
+  a {
+    color: #00754a;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  header {
+    background: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .logo {
+    width: 50px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  .header-right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .btn {
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+  }
+  .btn.green {
+    background-color: #00754a;
+    color: white;
+    padding: 20px 40px;
+    font-size: 20px;
+  }
+  .btn.dark {
+    background-color: black;
+    color: white;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f3f1e7;
+    padding: 3rem 2rem;
+  }
+  .hero-text {
+    max-width: 50%;
+    font-size: 30px;
+  }
+  .hero-image {
+    background: url('https://www.starbucks.com/weblx/images/rewards/hero/rewards-hero.png') no-repeat center/cover;
+    width: 50%;
+    height: 500px;
+    border-radius: 8px;
+  }
+  .app-link {
+    margin-top: 1rem;
+  }
+  
+  .steps {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  .step-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .step-card {
+    width: 280px;
+  }
+  .circle {
+    width: 30px;
+    height: 30px;
+    background-color: #00754a;
+    color: white;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    line-height: 30px;
+  }
+  /* đây là phần cho reward */
+  .rewards {
+    background-color: #d4e9e2;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  .stars-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0;
+  }
+  .stars-list span {
+    padding: 0.5rem 1rem;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+  }
+  .stars-list .active {
+    border-color: #00754a;
+  }
+  .reward-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .reward-detail img {
+    width: 180px;
+    border-radius: 8px;
+  }
+  .reward-text {
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .extras {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  .extra-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .extra-card {
+    width: 250px;
+  }
+  .extra-card img {
+    width: 80px;
+    margin-bottom: 1rem;
+  }
+  
+  .footer {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+/* đây là css cho tìm cửa hàng */
+
+  .find-store {
+    display: flex;
+    height: 90vh;
+  }
+  
+  .store-left {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  .store-options {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    border: #00754a solid 2px;
+    width: 500px;
+    border-radius: 50px
+  }
+  
+  .btn.outline {
+    background: white;
+    color: #00754a;
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+  
+  .store-search {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .store-search input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-style: italic;
+  }
+  
+  .store-message h4 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .store-footer-links {
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .store-footer-links a {
+    font-size: 14px;
+    color: #00754a;
+  }
+  
+  .store-map {
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .store-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+/* css của đăng ký */
+
+  .signup-container {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  .signup-logo {
+    width: 80px;
+    margin-bottom: 1rem;
+  }
+  .signup-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .signup-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+  }
+  .required {
+    color: red;
+  }
+  .form-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  .form-row .form-group {
+    flex: 1;
+  }
+  .form-terms {
+    text-align: left;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  .signup-btn {
+    background-color: #8cd3ff;
+    color: white;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+  }
+  .with-text {
+    margin-bottom: 1rem;
+  }
+  .signup-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .signup-icons img {
+    width: 40px;
+  }
+
+  /* css của đăng nhập */
+
+  .form-container {
+    text-align: center;
+    padding: 2rem;
+  }
+  .form-logo {
+    width: 100px;
+    margin: 1rem auto;
+  }
+  .form-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .form-group {
+    margin: 1rem auto;
+    max-width: 400px;
+    text-align: left;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+  }
+  .form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  .forgot-password {
+    display: block;
+    margin: 1rem auto;
+    color: #5ec2f3;
+    text-decoration: none;
+  }
+  .btn.blue {
+    background-color: #5ec2f3;
+    color: white;
+    font-size: 18px;
+    padding: 0.7rem 2rem;
+    border-radius: 10px;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  .with-text {
+    margin: 2rem 0 1rem;
+    font-weight: 500;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .social-icons img {
+    width: 50px;
+  }
+  
+  /* css quên mật khẩu */
+  .otp-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-top: 0.5rem;
+    justify-content: center;
+  }
+  
+  .otp-input {
+    width: 43px !important;
+    height: 43px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid #ccc !important;
+    border-radius: 18px !important;
+  }
+  .send-otp {
+    padding: 10px 30px;
+    background-color: #00754a;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .send-otp:hover {
+    background-color: #005f3d;
+  }
