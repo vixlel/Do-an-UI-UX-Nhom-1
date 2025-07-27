@@ -1252,3 +1252,19 @@ footer {
   .send-otp:hover {
     background-color: #005f3d;
   }
+.account-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.account-link a {
+  color: #00754a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.account-link a:hover {
+  text-decoration: underline;
+}
